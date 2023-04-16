@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,500&display=swap');
+* {
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center; 
+    min-height: 100vh;
+    background-image: url("pexels-codioful-(formerly-gradienta)-7130546.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+    flex-direction: column;
+}
+h3{
+  color: #000000;
+  height:5vh;
+  font-weight: 300;
+  text-align: left;
+}
+h5{
+  color: #000000;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+label{
+  width: 15vh;
+  color: #000000;
+  padding-left: 7px;
+}
+/* ********************************************LOGO AND NAVBAR*************************************************************** */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  color:#000000;
+  font-weight: 200;
+  width:2vh;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-left: 40px;
+  padding-top: 5px;
+}     
+.box h1{
+  font-size: 45px;
+  font-weight: 400;
+  width: fit-content ;
+  cursor: pointer;
+}
+
+.box b{
+  color: #9DA6F8 ;
+  font-size: 60px;
+  font-weight: 400;
+}
+.navbar{
+  width:100%;
+  height: 5vh;
+  flex:1;
+}
+nav {
+  display: flex;
+  margin-top: 25px;
+  width: 60vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 111;
+  padding: 0;
+}
+.navitems {
+  display: flex;
+  margin:0;
+}
+.navitems li {
+  list-style: none;
+  margin: 5px 15px;
+}
+.navitems li a{
+  font-size: 1.9vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: #0b0c0e;
+}
+
+.links a {
+  color: #0d0f10;
+  font-size: 2vw;
+  margin: 25px 10px;
+}
+
+.navitems li a:hover,
+.links a:hover{
+  color:#9DA6F8;
+  transition-duration: .5s;
+}
+  /* ********************************************LOGO AND NAVBAR END*************************************************************** */
+  /* ********************************************RESP0NSIVE*************************************************************** */
+@media screen and (max-width:1028px){
+  .content{
+    height :inherit ;
+    margin:10px;
+    width:150% ;
+
+  }
+  .multiple{
+    float: right;
+  }
+  .toggle{
+    transform: translate(0vh, -4000vh);
+
+  }
+  /* ********************************************RESP0NSIVE END*************************************************************** */
+  
+}
+  /* ********************************************CARDS*************************************************************** */
+.container {
+    position: relative;
+   order:2;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.card1,.card2,.card3,.card4{
+    position:relative;
+    height: 32vh;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 30px;
+    /* box-shadow: 0.2px 0.2px 50px rgba(0, 0, 0, 0.6); */
+    background: rgba(255, 255, 255, 0.225);
+    border-radius: 20px;
+    border: solid 1px white;
+    overflow: hidden; 
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+}
+.card1{
+  height:27vh;
+}
+.card2,.card4{
+  height:24vh;
+}
+.content {
+  width:100%;
+  margin:10px; 
+  margin-top: 25px;
+  display :flex;
+  justify-content: space-around ;
+
+}
+  /* ********************************************CONTAINER END*************************************************************** */
+
+
+ /***************************************************CARD1*************************************************************** */
+.symbol {
+  color:rgb(24, 20, 20);
+  width:fit-content;
+  font-size: .95em;
+  height: fit-content;
+  position: relative;
+}
+/************************************************DATEPICKER******************************************************************************/
+.date{
+  height: 100px;
+  font-size: .95em;
+  border-bottom: .2px solid rgba(0, 0, 0, 0.164);
+}
+
+.ui-datepicker {
+  width: 216px;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+.ui-datepicker a {
+  text-decoration: none;
+}
+.ui-datepicker table {
+  width: 100%;
+  color:#ff0000;
+  background-color: #ffffff66;
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+.ui-datepicker-header {
+  background:  #27262678;
+  color: #000000;
+  font-weight: 500;
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #111;
+}
+.ui-datepicker-title {
+  text-align: center;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color:white;
+  background-repeat: no-repeat;
+  line-height: 250%;
+  overflow: hidden;
+}
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+.ui-datepicker thead {
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top,  #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#f1f1f1));
+  background-image: -webkit-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -o-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -ms-linear-gradient(top,  #f7f7f7 0%,#f1f1f175 100%);
+  background-image: linear-gradient(top,  #f7f7f784 0%,#f1f1f130 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+  border-bottom: 1px solid #bbb;
+}
+.ui-datepicker th {
+  text-transform: uppercase;
+  font-size: 6pt;
+  padding: 5px 0;
+  color: #666666;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0);
+} 
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #00000018;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  text-align: center;
+}
+.ui-datepicker-calendar .ui-state-default {
+  color: #05e618;}
+  .ui-datepicker-unselectable .ui-state-default {
+    color: #e31212;
+  }
+.ui-datepicker-calendar .ui-state-active {
+  color: #6eafbf;
+}
+input[type=text]{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.175);
+    border-radius: 2px;
+    font-weight: 200;
+    color:rgb(0, 0, 0);
+    height:40.8px;
+    width: 9em;
+    max-width: 10em;
+    text-align: center;
+  }
+/************************************************DATEPICKER END******************************************************************************/
+     
+
+
+/***************************************************selectors**********************************************************************/
+
+select{
+  display: none;
+}
+.select-selected {
+  background-color: rgba(255, 255, 255, 0.175);
+  border-radius: 2px;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+
+}
+.select-items div,.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: rgba(87, 75, 75, 0.175);
+  top: 100%;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover{
+  background-color: rgba(11, 11, 11, 0.51);
+  color: #ffffff;
+}
+/***************************************************selectors END**********************************************************************/
+
+
+/***************************************************QUANTITY**********************************************************************/
+input[type=number]{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.175);
+  border-radius: 2px;
+  font-weight: 200;
+  color:#000;
+  height:30px;
+  width: 9em;
+  max-width: 10em;
+  height: 40.8px;
+  border-bottom: .2px solid rgba(0, 0, 0, 0.164);
+  text-align: center;
+}
+.multiple{
+  color:white;
+  width:fit-content;
+  font-size: .95em;
+  height: 60px;
+}
+.multiple label{
+  height:5px;
+
+}
+/***************************************************QUANTITY**********************************************************************/
+
+
+  /*************************************************SWITCH*************************************************************************/
+.switch {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;  
+  right: 0;
+  border: 2px solid white;
+  bottom: 0;
+  background-color: #CA0039;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #14e66b;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #14e66b;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.toggle{
+  height:fit-content;
+  width: fit-content;
+  float: bottom;
+}
+  /***************************************************SWITCH END**********************************************************************/
+
+
+  /* ********************************************CARD1 END*************************************************************** */
+
+
+ /* ********************************************CARD2*************************************************************** */
+.btn1,.btn2,.btn3{
+  background-color: #ffffff7c;
+  backdrop-filter: 30px;
+  border-radius: 20px;
+  width:20%;
+  margin-top: 10px;
+
+}
+.btn1 h3{
+  margin-left: 20px;
+  margin-top: 10px;
+  color:#0b5b0e;  
+  font-weight: 350;
+}
+.btn2 h3{
+  margin-left: 20px;
+  margin-top: 10px;
+  color:#00039d;  
+  font-weight: 350;
+}
+.btn3 h3{
+  margin-left: 20px;
+  margin-top: 10px;
+  color:#9e0000;  
+  font-weight: 350;
+}
+ input[type="button"]{
+      display: inline-block;
+      padding: 24px 20px;
+      border: 0;
+      text-decoration: none;
+      border-radius: 15px;
+      background-color: #fcfcfce2; 
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(30px);
+      color: rgba(0, 0, 0, 0.985);
+      font-size: 14px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      text-transform: uppercase;
+      align-items:stretch;
+      width: 17vh;
+   }
+   input[type="button"]:hover{
+    transition-duration: 0.5s;
+    color: white;
+    background-color: #03c520c2;
+  }
+.btn2 .red:hover,.btn3 .red:hover{
+    background-color: #c50303c2;
+    -o-transition-duration: 0.5s;
+    color:white;
+  }
+   /* ********************************************CARD2 END*************************************************************** */
+
+
+  /* ********************************************CARD3*************************************************************** */
+
+
+    /* ********************************************slider*************************************************************** */
+                .callgrp{
+                  display: flex;
+                  width: 50%;
+                  margin-left: 50px;
+                }
+                .callgrp h4{
+                  font-weight: 400;
+                  font-size: 1.7em;
+                  margin-left: 7px;
+                  margin-bottom: 10px;
+                  color: #0b5b0e;
+                }
+                .callgrp h5{
+                  color:#0b5b0e
+                }
+                .putgrp{
+                  display: flex;
+                  width: 100%;
+                  margin-left: 200px;
+                }
+                .putgrp h4{
+                  font-weight: 400;
+                  font-size: 1.7em;
+                  margin-left: 7px;
+                  margin-bottom: 10px;
+                  color: #9e0000;
+                }
+                .putgrp h5{
+                  color: #9e0000;
+                }
+                input[type="range"] {
+                  -webkit-appearance: none;
+                  margin-right: 15px;
+                  width: 200px;
+                  height: 7px;
+                  background: rgba(255, 255, 255, 0.6);
+                  border-radius: 5px;
+                  background-image: linear-gradient(#ff4500, #ff4500);
+                  background-size: 70% 100%;
+                  background-repeat: no-repeat;
+                }
+                
+                input[type="range"]::-webkit-slider-thumb {
+                  -webkit-appearance: none;
+                  height: 20px;
+                  width: 20px;
+                  border-radius: 50%;
+                  background: #ff4500;
+                  cursor: ew-resize;
+                  box-shadow: 0 0 2px 0 #555;
+                  transition: background .3s ease-in-out;
+                }
+                
+                input[type=range]::-webkit-slider-runnable-track  {
+                  -webkit-appearance: none;
+                  box-shadow: none;
+                  border: none;
+                  background: transparent;
+                }
+                .slidercall{
+                      margin-top: 30px;
+                }
+                .trail{
+                  border-radius:20px;
+                  display:flex;
+                  align-items:center;
+
+                }
+                .target{
+                  border-radius:20px;
+                  display:flex;
+                  align-items:center;
+
+                }
+                .stoploss{
+                  border-radius:20px;
+                  display:flex;
+                  align-items:center;
+
+                }
+    /* ********************************************slider end*************************************************************** */
+.card4 h3{
+  height: fit-content;
+  font-weight: 300;
+  margin: 2px;
+  text-align: center;
+}
+.card4 label{
+  height: fit-content;
+  margin-bottom: 0;
+}
+.card4 input[type=text]{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.488);
+  border-radius: 10px;
+  color:rgb(0, 0, 0);
+  font-weight: 300;
+  height:40.8px;
+  width: 9em;
+  max-width: 10em;
+  text-align: center;
+}

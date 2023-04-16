@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>scalpeR</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="box" id="box">
+            <h1>scalpe<b>R</b></h1>
+        </div>
+            <nav>
+                <ul class="navitems">
+                    <li><a href="https://finnova.in">home</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a class="one" href="#">handles</a></li>    
+                    <li><a class="one" href="#">about</a></li>
+                </ul>
+                <div class="links">
+                    <a href="#"><i class="fab fa-linkedin "></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+        </nav>
+    </div>
+    </div>
+    <div class="container">
+        <div class="card1" data-tilt-glare data-tilt-max-glare=".1">
+            <div class="content">
+                <div class="symbol" >
+                    <label for="Symbol"><h3>Select Symbol</h3></label>
+                    <select name="Symbols" id="Symbol">
+                        <option value="">choose</option>
+                        <option value="Nifty">Nifty</option>
+                        <option value="Bank Nifty">Bank Nifty</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <label for="datepicker"><h3>Expiry</h3>
+                    <input type="text" value="dd-mm-yyyy" id="datepicker"></input>
+                </div>
+                <div class="symbol">
+                    <label for="Symbol"><h3>Select Strike CE</h3></label>
+                    <select name="Symbols" id="Symbol">
+                        <option value="">choose</option>
+                        <option value="Nifty">+50</option>
+                        <option value="Bank Nifty">-50</option>
+                    </select>
+                </div>
+                <div class="symbol">
+                    <label for="Symbol"><h3>Select Strike PE</h3></label>
+                    <select name="Symbols" id="Symbol">
+                        <option value="">choose</option>
+                        <option value="Nifty">+50</option>
+                        <option value="Bank Nifty">-50</option>
+                    </select>
+                </div>
+                <div class="symbol">
+                    <label for="Symbol"><h3>Order type</h3></label>
+                    <select name="Symbols" id="Symbol">
+                        <option value="">choose</option>
+                        <option value="Nifty">new</option>
+                        <option value="Bank Nifty">old</option>
+                    </select>
+
+                </div>
+               <div class="multiple">
+                    <label for="points"><h3>Quantity</h3></label>
+                    <input type="number" value="0" name="points" step="50">
+                </div>
+                <div class="toggle">
+                    <label class="switch">enabl
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+            <div class="card2"  data-tilt-glare data-tilt-max-glare=".1">
+                <div class="content">
+                    <div class="btn1">
+                    <h3>Call options</h3>
+                        <input type="button" value="buy">
+                        <input type="button" class="red" value="sell">
+                    </div>
+                    <div class="btn2">
+                        <h3>Selected symbol  LTZ:XYZ</h3>
+                        <input type="button" class="red" value="panic">
+                        <input type="button" class="red" value="cancel all">
+                    </div>
+                    <div class="btn3">
+                        <h3>Put options</h3>
+                        <input type="button" value="buy">
+                        <input type="button" class="red" value="sell">
+                    </div>
+                </div>
+                </div>
+
+                <div class="card3" data-tilt-glare data-tilt-max-glare=".1">
+                    <div class="content">
+                        
+                        <div class="callgrp">
+                            <div class="slidercall">   
+                                <h4>Call option positions</h4>                             
+                                <div class="stoploss">
+                                    <label for="slider0"><h5>Stoploss</h5></label>
+                                    <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/><output id="rangevalue">70</output>
+                                </div>
+                                <div class="target">
+                                    <label for="slider1"><h5>Target</h5></label>
+                                    <input type="range" value="1000" min="1000" max="5000"  oninput="rangevalue.value=value"/><output id="rangevalue">1000</output>
+                                </div>
+                                <div class="trail">
+                                <label for="slider2"><h5>Trail</h5></label>
+                                <input type="range" min="1000" max="5000"  class="slider2" id="range" oninput="x.value =value"><output id="x">1000</output>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="putgrp">
+                            <div class="slidercall"> 
+                                <h4>Put option positions</h4>                               
+                                <div class="stoploss">
+                                    <label for="slider0"><h5>Stoploss</h5></label>
+                                    <input type="range" min="1000" max="5000" value="50" class="slider0" id="range" oninput="rangevalue.value=value"/> <output id="rangevalue">1000</output>
+                                </div>
+                                <div class="target">
+                                    <label for="slider1"><h5>Target</h5></label>
+                                <input type="range" min="1000" max="5000" value="50" class="slider1" id="range" oninput="rangevalue.value=value"/> <output id="rangevalue">1000</output>
+                                </div>
+                                <div class="trail">
+                                <label for="slider2"><h5>Trail</h5></label>
+                                <input type="range" min="1000" max="5000" value="50" class="slider2" id="range" oninput="rangevalue.value=value"/> <output id="rangevalue">1000</output>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4" data-tilt-glare data-tilt-max-glare=".1">
+                    <div class="content">
+                        <div class="disp">
+                            <label for="PnL"><h3>Total PnL</h3></label>
+                            <input type="text" name="PnL" id="PnL">
+                        </div>
+                        <div class="disp">
+                            <label for="TSL"><h3>Total SL</h3></label>
+                            <input type="text" name="TSL" id="TSL">
+                        </div>
+                        <div class="disp">
+                            <label for="OL"><h3>Order Loss</h3></label>
+                            <input type="text" name="OL" id="OL">
+                        </div>
+                        <div class="disp">
+                            <label for="DL"><h3>Loss per Day</h3></label>
+                            <input type="text" name="DL" id="DL">
+                        </div>
+                        <div class="disp">
+                            <label for="Open"><h3>Open PnL</h3></label>
+                            <input type="text" name="Open" id="Open">
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/get-query-selector@0.0.1/index.min.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <!--********************************************* TILTS****************************************************************** -->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card1,.card2,.card3,.card4"), {
+            max:0.1,
+            gyroscope:true
+        });</script>
+<!--********************************************* TILT END****************************************************************** -->
+
+        <!--********************************************* DATEPICKER****************************************************************** -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+
+         <script>
+            $(function () {
+                $("#datepicker").datepicker({
+                    beforeShowDay: function (d) {
+                        var day = d.getDay();
+                        return [day != 0 && day != 1 && day != 2 && day != 3 && day != 5 && day != 6];
+                    },
+                    minDate:0
+                });
+            });
+            </script>
+
+        <!--********************************************* DATEPICKER END****************************************************************** -->
+
+        <!--********************************************* INPUT LIST****************************************************************** -->
+        <script>var x, i, j, l, ll, selElmnt, a, b, c;
+            /* Look for any elements with the class "custom-select": */
+            x = document.getElementsByClassName("symbol");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+              selElmnt = x[i].getElementsByTagName("select")[0];
+              ll = selElmnt.length;
+              /* For each element, create a new DIV that will act as the selected item: */
+              a = document.createElement("DIV");
+              a.setAttribute("class", "select-selected");
+              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+              x[i].appendChild(a);
+              /* For each element, create a new DIV that will contain the option list: */
+              b = document.createElement("DIV");
+              b.setAttribute("class", "select-items select-hide");
+              for (j = 1; j < ll; j++) {
+                /* For each option in the original select element,
+                create a new DIV that will act as an option item: */
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    /* When an item is clicked, update the original select box,
+                    and the selected item: */
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                      if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                          y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                      }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+              }
+              x[i].appendChild(b);
+              a.addEventListener("click", function(e) {
+                /* When the select box is clicked, close any other select boxes,
+                and open/close the current select box: */
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+              });
+            }
+            
+            function closeAllSelect(elmnt) {
+              /* A function that will close all select boxes in the document,
+              except the current select box: */
+              var x, y, i, xl, yl, arrNo = [];
+              x = document.getElementsByClassName("select-items");
+              y = document.getElementsByClassName("select-selected");
+              xl = x.length;
+              yl = y.length;
+              for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                  arrNo.push(i)
+                } else {
+                  y[i].classList.remove("select-arrow-active");
+                }
+              }
+              for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                  x[i].classList.add("select-hide");
+                }
+              }
+            }
+            
+            /* If the user clicks anywhere outside the select box,
+            then close all select boxes: */
+            document.addEventListener("click", closeAllSelect);
+            </script>
+                <!--********************************************* INPUT LIST****************************************************************** -->
+        
+            </script>
+            <script>
+            const rangeInputs = document.querySelectorAll('input[type="range"]')
+            const numberInput = document.querySelector('input[type="number"]')
+
+            function handleInputChange(e) {
+            let target = e.target
+            if (e.target.type !== 'range') {
+                target = document.getElementById('range')
+            } 
+            const min = target.min
+            const max = target.max
+            const val = target.value
+            
+            target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+            }
+
+            rangeInputs.forEach(input => {
+            input.addEventListener('input', handleInputChange)
+            })
+
+            numberInput.addEventListener('input', handleInputChange)</script>
+            </body>
+</html>
