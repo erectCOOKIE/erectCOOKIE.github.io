@@ -1,0 +1,170 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.mb-4 {
+    text-align: center;
+}
+
+.shadow-md.rounded-md.p-6 {
+    width: 50%;
+    margin-left: 0;
+}
+
+h3 {
+    height: fit-content;
+    width: 100%;
+}
+
+.buttons {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.card1 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.containerb {
+    width: 100%;
+    height: 100%;
+}
+
+.containerb {
+    grid-template-rows: 0.2fr 0.1fr .1fr .1fr 0.1fr;
+    padding: 0;
+    display: grid;
+}
+
+@media (max-width:819px) {
+    .cancel {
+        font-size: small;
+        width: 100.5px;
+        height: 44px
+        ;
+    }
+
+    .loss {
+        font-size: 15px;
+    }
+}
+
+td {
+    border: 1px solid ;
+}
+
+th {
+    border: 1px solid ;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.enabled {
+    background-color: red;
+}
+
+input[type="date"] {
+    border-radius: 0;
+    background-color: rgba(28, 36, 115, 0.67);
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 42.8px;
+    padding: 5px;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    display: none;
+}
+
+input[type="date"]::before {
+    content: attr(placeholder);
+    color: rgb(255, 255, 255);
+}
+
+input[type="date"]:focus::before {
+    display: none;
+}
+
+table {
+    width: 100%;
+
+    /* Set the table width */
+    table-layout: fixed;
+
+    /* Fix the table layout */
+}
+
+th,
+td {
+    padding: 8px;
+
+    /* Add some padding to cells for better readability */
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 5%;
+
+    /* Set the width for the first column */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 30%;
+
+    /* Set the width for the second column */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 50%;
+
+    /* Set the width for the third column */
+}
+
+
