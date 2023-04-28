@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Login/Signup Page</title>         
+        <link rel="stylesheet" type="text/css" href="loginstyles.css"> 
+    </head>     
+    <body> 
+        <div class="container"> 
+            <div class="form-wrapper"> 
+                <form id="loginForm" class="form active"> 
+                    <h2>Login</h2> 
+                    <input type="text" placeholder="Username" required> 
+                    <input type="password" placeholder="Password" required> 
+                    <button type="submit" style="width: 320px;">Login</button>                     
+                    <p class="message">Not registered? <span id="signupLink">Create an account</span></p> 
+                </form>                 
+                <form id="signupForm" class="form"> 
+                    <h2>Sign Up</h2> 
+                    <input type="text" placeholder="Username" required> 
+                    <input type="password" placeholder="Password" required> 
+                    <input type="password" placeholder="Confirm Password" required> 
+                    <button type="submit" style="width: 320px;">Sign Up</button>                     
+                    <p class="message">Already registered? <span id="loginLink">Log in</span></p> 
+                </form>                 
+            </div>             
+        </div>         
+        <script src="loginscript.js"></script>         
+    </body>     
+</html>
