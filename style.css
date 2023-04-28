@@ -1,0 +1,112 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.mb-4 {
+    text-align: center;
+}
+
+.shadow-md.rounded-md.p-6 {
+    width: 50%;
+    margin-left: 0;
+}
+
+h3 {
+    height: fit-content;
+    width: 100%;
+}
+
+.buttons {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.card1 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.containerb {
+    width: 100%;
+    height: 100%;
+}
+
+.containerb {
+    grid-template-rows: 0.2fr 0.1fr .1fr .1fr;
+    padding: 0;
+    display: grid;
+}
+
+@media (max-width:819px) {
+    .cancel {
+        font-size: small;
+        width: 100.5px;
+        height: 44px
+        ;
+    }
+
+    .loss {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .flex-wrap {
+    }
+
+    .justify-center {
+        width: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width:560px) {
+    .mxpd {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .items-center {
+    }
+
+    .head.items-center {
+        height: 80px;
+    }
+
+    .head .justify-center {
+        width: 0px;
+    }
+
+    .login {
+    }
+}
+
+@media (max-width:1023px) {
+    .login {
+    }
+
+    .login {
+    }
+}
+
